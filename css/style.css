@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&family=Ubuntu:wght@400;500;700&display=swap');
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+/* Back to top button */
+
+#button {
+  display: inline-block;
+  background-color: #05b495;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* Navigation Section */
+.nav-wrapper ,nav {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  background:#fcfefd;
+
+}
+.brand-logo {
+  color: grey !important;
+}
+
+#logo-container{
+  color: grey !important;
+}
+#navigation ul li a{
+  color: grey !important;
+  padding: 0 25px;
+  font-size:  18px;
+}
+#navigation ul li a:hover{
+  color: green !important;
+}
+.material-icons{
+  color: grey !important;
+}
+
+.sidenav-list-item{
+  margin-top: -30px;
+}
+
+
+
+/* Home Section */
+#home,#skills{
+  background: #fcfefd;
+  font-family: 'Poppins',sans-serif;
+}
+#particles-js{
+  widows: 100%;
+  height: 100vh;
+  background-color: #fff;
+  position: relative;
+}
+.content{
+  text-align:center;
+  padding-top: 20px;
+}
+.content .info{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+}
+.content .info img{
+  
+  object-fit: cover;
+  border-radius: 100% ;
+}
+#home .info h3{
+  color: grey;
+  font-size: 30px;
+  padding-top: 50px;
+}
+#home .info h1{
+  color: grey;
+  margin-bottom: ;
+}
+#home .info img{
+  height: 400px;
+  width: 400px;
+}
+#home .content .info p{
+  font-size: 25px;
+  color: grey;
+}
+.typing{
+  font-size: 28px;
+}
+
+
+
+/* SKills Section */
+#skills{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.heading-skills {
+  padding-bottom: 50px;
+}
+.skill-images{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  margin-top: 20px ;
+}
+.skill-text{
+  font-family: 'Ubuntu',sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+
+
+/* About Section  */
+
+#about{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: 'Poppins',sans-serif;
+}
+
+#about .row {
+  margin-top: 50px;
+}
+.about-info{
+  padding-left: 20%;
+}
+.about-info-heading{
+  font-size: 25px;
+}
+#about .column-wrapper{
+  padding-left: 20%;
+}
+@media only screen and (max-width: 600px) {
+  #about .column-wrapper{
+    padding-left: 0%;
+  }
+  #about .column-wrapper .about-info-heading{
+    text-align: center;
+  }
+  .form-container{
+    padding-top: 50px;
+  }
+}
+
+
+#contact{
+  padding-top: 100px;
+  font-family: 'Poppins',sans-serif;
+}
